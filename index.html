@@ -1,291 +1,241 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<html lang="en"> 
-    <head>
-        <meta charset="UTF-8">
+    <title>Jon Barron</title>
 
+    <meta name="author" content="Qianxu Wang">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  </head>
 
-        <meta name="description" content="Project website for SpareseDFF">
-        <meta name="author" content="Qianxu Wang">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="style.css?cache=77333914184988801948">
-        <link rel="icon" href="icons/sage_icon.png">
-
-        <title>SpareDFF</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-    <style>
-        a {
-            color: #B1040E;
-        }
-
-        a:hover {
-            color: #820000;
-            text-decoration: underline;
-        }
-
-        .body_text {
-            color: rgb(46,45,41);
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 300;
-            line-height: 1.9rem;
-            font-size: 1.1rem;
-        }
-
-        .text_title {
-            color: rgb(46,45,41);
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 500;
-            line-height: 3rem;
-            font-size: 2.2rem;
-            padding-top: 20px;
-        }
-
-        .text_venue {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 500;
-            line-height: 2.0rem;
-            font-size: 1.5rem;
-            color: rgb(77, 79, 83);
-        }
-
-        .text_author {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 400;
-            line-height: 1.5rem;
-            font-size: 1.1rem;
-            color: rgb(77, 79, 83);
-        }
-
-        .text_resource {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 400;
-            line-height: 1.5rem;
-            font-size: 1.0rem;
-            color: rgb(77, 79, 83);
-        }
-
-        .text_header {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 500;
-            line-height: 2.5rem;
-            font-size: 2.0rem;
-            margin-top: 0.4rem;
-            color: rgb(140, 21, 21);
-        }
-
-        .text_subheader {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 400;
-            line-height: 2.5rem;
-            font-size: 1.4rem;
-            margin-top: 0.4rem;
-            color: rgb(140, 21, 21);
-        }
-
-        .figure_caption {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 400;
-            line-height: 1.8rem;
-            font-size: 1.2rem;
-            color: rgb(77, 79, 83);
-        }
-
-        .text_reference {
-            font-family: 'Open Sans', sans-serif;
-            text-align: left;
-            font-size: 0.7em;
-            color: rgb(77, 79, 83);
-        }
-
-        .text_ack {
-            font-family: 'Open Sans', sans-serif;
-            text-align: center;
-            font-size: 0.7em;
-            color: rgb(140, 21, 21);
-        }
-
-        .teaser_grid {
-            display: grid;
-            grid-template-columns: 33% 33% 33%;
-            grid-template-rows: 1fr;
-            justify-content: center;
-            grid-auto-flow: row;
-        }
-
-        .teaser_fig {
-            max-width: 99%;
-            display: block;
-            margin-left: auto;
-  			margin-right: auto;
-
-        }
-
-        .icons {
-            height: 3.5em;
-        }
-
-
-        .big_figure {
-            max-width: 100%;
-            display: block;
-            margin: 1em auto 1em;
-        }
-
-        .median_figure {
-            max-width: 75%;
-            display: block;
-            margin: 1em auto 1em;
-        }
-
-        .color_switch {
-            background-color: rgb(255, 255, 255);
-        }
-
-        .teaser_item {
-            text-align: center;
-        }
-
-        .table_title {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 700;
-            font-size: 1.25rem;
-            color: rgb(77, 79, 83);
-            text-align: center;
-        }
-
-        .table_head {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 600;
-            font-size: 1.1rem;
-            color: rgb(77, 79, 83);
-            text-align: center;
-        }
-
-        .table_elem {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 300;
-            font-size: 1.0rem;
-            color: rgb(77, 79, 83);
-            text-align: center;
-            align-self: center;
-        }
-
-        .table_emph {
-            font-weight: 700;
-        }
-
-        .jumbotron {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px 4px 20px 4px;
-        }
-        .jumbotron > .title {
-            font-size: 18pt;
-            color: #414446;
-            clear: both;
-            text-align: center;
-        }
-
-        .carousel-item {
-            text-align: center;
-        }
-        .carousel-caption {
-            height: 15%;
-            background: rgba(230, 230, 230, 0.9);
-        }
-
-    </style>
-
-    <body>
-    <section>
-    <div class="container">
-        <div class="row" id="title">
-            <p class="col text-center mt-4 text_title">
-                Hi! I am Qianxu Wang!
-            </p>
-        </div>
-
-        <div class="row" id="venue">
-            <p class="col text-center text_venue">   
-            </p>
-        </div>
-
-        
-
-        <div class="row" id="resources">
-            <div class="col text-center text_resource">
-                <ul class="list-inline">
-                    <li class="list-inline-item mx-4">
-                        <a href="">
-                            <img src="icons/paper_icon.png" class="icons">
-                            <p>Paper</p>
-                        </a>
-                    </li>
-                    <li class="list-inline-item mx-4">
-                            <a href="">
-                            <img src="icons/youtube_icon.png" class="icons">
-                            <p>Video</p>
-                            </a>
-                    </li>
-                    <li class="list-inline-item mx-4">
-                        <a href="">
-                            <img src="icons/github_icon.png" class="icons">
-                            <p>Code</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    </section>
-
-
-
-
-	<section class="color_switch">
-        <div class="container">
-        <div class="row" id="abstract">
-            <div class="col my-3">
-                <p class="text_header">
-                    Biography
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: left;">
+                  <span style="font-family: Pacifico;" >Qianxu Wang</span>
+                  <span >| 王乾旭</span>
                 </p>
-                
-                <p class="body_text">
-                    I'm an undergrad in PKU. This website is under construction. 
+                <p>I am a third-grad undergraduate student at the School of EECS, PKU, advised <a href="https://yzhu.io/">Prof. Yixin Zhu</a>. 
+                  I am also honored to conduct research under the guidance of <a href="https://cs.stanford.edu/~congyue/">Congyue Deng</a> at Stanford.
                 </p>
+                <p style="text-align:center">
+                  <a href="mailto:helloqxwang@gmail.com">Email</a> &nbsp;/&nbsp;
+                  <!-- <a href="data/JonBarron-CV.pdf">CV</a> &nbsp;/&nbsp; -->
+                  <!-- <a href="data/JonBarron-bio.txt">Bio</a> &nbsp;/&nbsp; -->
+                  <!-- <a href="https://scholar.google.com/citations?hl=en&user=jktWnL8AAAAJ">Scholar</a> &nbsp;/&nbsp; -->
+				  <!-- <a href="https://www.threads.net/@jonbarron">Threads</a> &nbsp;/&nbsp; -->
+				  <!-- <a href="https://bsky.app/profile/jonbarron.bsky.social">Bluesky</a> &nbsp;/&nbsp; -->
+                  <!-- <a href="https://twitter.com/jon_barron">Twitter</a> &nbsp;/&nbsp; -->
+                  <a href="https://github.com/Halowangqx">Github</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:40%;max-width:40%">
+                <a href="images/qxwang.jpg"><img style="width:100%;max-width:100%;object-fit: cover; " alt="profile photo" src="images/qxwang.jpg" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Research</h2>
+                <p>
+                  I'm interested in <b>3D Vision, Robotics, Dexterous Manipulation and Cognitaive Science</b>. 
+                  My ambition extends beyond the conventional: I seek to unravel the underlying principles of human perception and intelligence.  
+                  My goal is to empower robots with the ability to see, think, and act with a human-like depth and subtlety.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+            <tr>
+              <td style="padding:10px;width:30%;vertical-align:middle">
+                <img src='images/sparse_dff.png' width="100%">
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="">
+                  <papertitle>SparseDFF: Sparse-View Feature Distillation for One-Shot Dexterous Manipulation</papertitle>
+                </a>
                 <br>
-                <!-- <img src="images/vis_volume.png" class="teaser_fig" width="80%">
+                <strong>Qianxu Wang</strong>,
+                  <a href="https://cs.stanford.edu/~congyue/">Haotong Zhang</a>, 
+                  <a href="https://cs.stanford.edu/~congyue/">Congyue Deng</a> <sup>†</sup>,
+                  <a href="https://qq456cvb.github.io/">Yang You</a>,
+                  <a href="https://zsdonghao.github.io/">Hao Dong</a>,
+                  <a href="https://yzhu.io/">Yixin Zhu</a> <sup>†</sup>,
+                  <a href="https://geometry.stanford.edu/member/guibas/">Leonidas Guibas</a><sup>†</sup>(<sup>†</sup>corresponding authors)
+                  <br>
+                  <em>International Conference on Learning Representations (ICLR)</em>, 2024, Accepted
+                  <br>
+                  <a href="">Project Page</a>
+                  /
+                  <a href="https://arxiv.org/abs/2310.16838">ArXiv</a>
+                  /
+                  <a href="https://github.com/Halowangqx/SparseDFF">Code</a>
+                  <!-- / -->
+                  <!-- <a href="">Video</a> -->
+                  <p></p>
+                  <!-- <p>
+                    We present Sequential Dexterity, a general system based on reinforcement learning (RL) that chains multiple dexterous policies for achieving long-horizon task goals.
+                  </p> -->
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:10px;width:30%;vertical-align:middle">
+                <img src='images/detailed.png' width="100%">
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://sites.google.com/view/openbidexhand">
+                  <papertitle>Learning a Universal Human Prior for Dexterous Manipulation from Human Preference</papertitle>
+                </a>
                 <br>
-                <img src="images/vis_prune.png" class="teaser_fig" width="80%">
-                <br> -->
-            </div>
-        </div>
-        </div>
-    </section>
+                <a href="https://quantumiracle.github.io/webpage/">Zihan Ding</a>,
+                <a href="https://cypypccpy.github.io/">Yuanpei Chen</a>,
+                <a href="https://allenzren.github.io/">Allen Z. Ren</a>,
+                <a href="https://sites.google.com/view/gugurus/home">Shixiang Shane Gu</a>,
+                <strong>Qianxu Wang</strong>,
+                <a href="https://zsdonghao.github.io/">Hao Dong</a>,
+                <a href="https://sites.google.com/view/cjin/home">Chi Jin</a>
+                <br>
+                <a href="https://arxiv.org/abs/2304.04602">Arxiv</a>
+                /
+                <a href="https://sites.google.com/view/openbidexhand">Project Page</a>
+                /
+                <a href="https://sites.google.com/view/openbidexhand/home/datacollection?authuser=0">Provide Your Preference</a></li>
+                /
+                <a href="https://cypypccpy.github.io/">Code (Coming soon)</a></li>
+                <br>   
+                <em>RSS Workshop on Learning Dexterous Manipulation</em>, 2023, Accepted
+                <p></p>
+                <!-- <p>We propose a framework to learn a universal human prior using direct human preference feedback over videos, for efficiently tuning the RL policy on 20 dual-hand robot manipulation tasks in simulation, without a single human demonstration</p> -->
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:10px;width:30%;vertical-align:middle">
+                <img src='images/imagemanip.jpg' width="100%">
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://sites.google.com/view/imagemanip">
+                  <papertitle>ImageManip: Image-based Robotic Manipulation with Affordance-Guided Next View Selection</papertitle>
+                </a>
+                <br>
+                <a href="">Xiaoqi Li*</a>,
+                <a href="">Yanzi Wang*</a>,
+                <a href="">Yan Shen</a>,
+                <a href="">Haoran Lu</a>,
+                <strong>Qianxu Wang</strong>,
+                <a href="">Ponomarenko Iaroslav</a>,
+                <a href="">Boshi An</a>,
+                <a href="">Jiaming Liu</a>,
+                <a href="https://zsdonghao.github.io/">Hao Dong</a>
+                <br>
+                <a href="https://arxiv.org/abs/2310.09069">Arxiv</a>
+                /
+                <a href="https://sites.google.com/view/imagemanip">Project Page</a>
+                <br>   
+                <em>Arxiv</em>, 2023
+                <p></p>
+                </td>
+          </tbody></table>
 
 
 
-        <div class="row" id="ack" style="margin-top: 1rem">
-            <p class="col text_ack my-3">
-                Contact Me: 2100013013@stu.pku.edu.cn
-            </p>
-        </div>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-    </body>
+
+
+
+
+
+
+
+
+
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <tr>
+            <td>
+              <h2>Experience</h2>
+            </td>
+          </tr>
+        </tbody></table>
+        <table width="100%" align="center" border="0" cellpadding="10"><tbody>
+            <td style="padding-left:20px;padding-right:20px;width:20%;vertical-align:middle"><img src="images/peking_university.png", width="90%"></td>
+            <td width="80%" valign="center">
+              <b>Peking University</b>, China
+              <br> 2021.09 - Present
+              <br>
+              <br> <b>Undergraduate Student</b>
+              <br> Advisor: Prof. <a href="https://yzhu.io/">Yixin Zhu</a>
+            </td>
+          </tr>
+        </tbody></table>
+
+
+
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+
+          
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+            <tr>
+              <td>
+                <h2>Miscellanea</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+            
+            <!-- <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/cvf.jpg"></td>
+              <td width="75%" valign="center">
+                <a href="https://cvpr.thecvf.com/Conferences/2024/Organizers">Area Chair, CVPR 2024</a>
+                <br>
+                <a href="https://cvpr2023.thecvf.com/Conferences/2023/Organizers">Demo Chair, CVPR 2023</a>
+                <br>
+                <a href="https://cvpr2022.thecvf.com/area-chairs">Area Chair, CVPR 2022</a>
+                <br>
+                <a href="http://cvpr2021.thecvf.com/area-chairs">Area Chair & Award Committee Member, CVPR 2021</a>
+                <br>
+                <a href="http://cvpr2019.thecvf.com/area_chairs">Area Chair, CVPR 2019</a>
+                <br>
+                <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a>
+              </td>
+            </tr>
+            <tr> -->
+
+        </td>
+      </tr>
+    </table>
+
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr>
+        <td style="padding:0px">
+          <br>
+          <p style="text-align:right;font-size:small;">
+          Websign design from <a href="https://jonbarron.info/">Jon Barron</a>. Thanks for stopping by :D
+          <br> Last updated: Jan 23, 2024
+          </p>
+        </td>
+      </tr>
+    </tbody></table>
+  </td>
+</tr>
+</table>
+  </body>
 </html>
